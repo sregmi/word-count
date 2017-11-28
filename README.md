@@ -40,5 +40,11 @@ Q. What makes a valid word? Are they the same as word?
 
 A. Out of all the "words", anything that is a dictionary word is a valid word. Hence, valid words will be the subset of words. The program displays the valid word with its count in the result
 
+##### Screenshots:
+
+![alt text](images/screenshot-1.png "Initial page")
+
+![alt text](images/screenshot-3.png "Results page")
+
 
    
