@@ -34,7 +34,9 @@ def count_letters(input_string):
 	the other is just a valid dictionary word. please read readme for more
 	information
 	'''
+
 	list_words = input_string.split()
+
 	#removing all the non alphabet words from the string using regex
 	alphabet_filter = re.compile('.*[A-Za-z].*')
 	alpha_string = [word for word in list_words if alphabet_filter.match(word)]
