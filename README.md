@@ -11,23 +11,31 @@ This project depends on Flask, so first install with:
 
     pip install -r requirements.txt
 
+
 ##### Run the app:
+--------------------
 
     python main.py
 
 
 Then visit http://127.0.0.1:5000/ in a browser
 
+
 ##### Packages Used:
+--------------------
     Flask
     Flask-wtf for form handling
     pyenchant for identifying valid words
 
+
 ##### How it works:
+--------------------
 
 Once the user enters text in the input box, the application counts the total number of words and displays the frequency of each of the word. In addition to that, the application also checks each word to identify if its a valid word (word with a meaning in dictionary) and then displays the count of valid words with the frequency if each valid word.
 
+
 ##### Assumptions:
+--------------------
 
 Q. What makes a word?
 
@@ -43,6 +51,8 @@ A. Here are the criteria I have used to identify a string as a word
 Q. What makes a valid word? Are they the same as word?
 
 A. Out of all the "words", anything that is a dictionary word is a valid word. Hence, valid words will be the subset of words. The program displays the valid word with its count in the result
+
+
 
 ##### Screenshots:
 
