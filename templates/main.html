@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Count Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+  </head>
+  <body>
+  {% if words %}
+    <h2>Total Word Count : {{ total }}</h2><br>
+    <div id="results">
+      <table>
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        {% for word in words %}
+          <tr>
+            <td>{{ word[0] }}</td>
+            <td>{{ word[1] }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+      <br>
+      {% if valid_words %}
+      <div>
+        <h3> Valid Words : {{ valid_word_count }}</h3>
+        <table>
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        {% for valid_word in valid_words %}
+          <tr>
+            <td>{{ valid_word[0] }}</td>
+            <td>{{ valid_word[1] }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+      </div>
+    {% endif %}
+    </div>
+  {% endif %}
+  </body>
+</html>

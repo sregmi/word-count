@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+{% from "_formhelpers.html" import render_field %}
+<html>
+<head>
+	<title>Word Count</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+	<form method="POST" action="/">
+		{{ form.csrf_token }}
+		{{ render_field(form.input_text) }}
+		<input type="submit" value="Calculate" class="submit_btn">
+	</form>
+</body> 
+</html>
