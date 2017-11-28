@@ -1,6 +1,6 @@
 # word-count
 
-An app to count the number of words in a text
+An app to count the number of words in a text.
 
 Setup
 -----
@@ -22,6 +22,10 @@ Then visit http://127.0.0.1:5000/ in a browser
     Flask
     Flask-wtf for form handling
     pyenchant for identifying valid words
+
+##### How it works:
+
+Once the user enters text in the input box, the application counts the total number of words and displays the frequency of each of the word. In addition to that, the application also checks each word to identify if its a valid word (word with a meaning in dictionary) and then displays the count of valid words with the frequency if each valid word.
 
 ##### Assumptions:
 
